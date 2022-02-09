@@ -1,5 +1,6 @@
 local ImNotDumb = {
     2836484794,
+    2904752444
 
 }
 local Blacklist = {
@@ -8,17 +9,3 @@ local Blacklist = {
 if not table.find(ImNotDumb, game:GetService("Players").LocalPlayer.UserId) then
 game.Players.LocalPlayer:Kick()
 end
-
-if table.find(Blacklist, game:GetService("Players").LocalPlayer.UserId) then
-    print("Your Blacklisted, goodbye lmao")
-    wait(1)
-    game.Players.LocalPlayer.Backpack.ServerTraits.Input:FireServer({"md"}, CFrame.new())
-    game:GetService('TeleportService'):Teleport(536102540, LocalPlayer)
-end
-coroutine.resume(coroutine.create(function()
-game:GetService('RunService').RenderStepped:Connect(function()
-    if nigger == syn.request then
-        game.Players.LocalPlayer.Backpack.ServerTraits.Input:FireServer({'md'})
-    end
-end)
-end))
